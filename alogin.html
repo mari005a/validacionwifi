@@ -7,24 +7,50 @@
 <meta http-equiv="expires" content="-1">
 <style type="text/css">
 <!--
-textarea,input,select {
-	background-color: #FDFBFB;
-	border: 1px #BBBBBB solid;
-	padding: 2px;
-	margin: 1px;
-	font-size: 14px;
-	color: #808080;
+body {
+  color: #333333;
+  font-size: 13px;
+  font-family: notosans, Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+/* Imagen centrada y borrosa en el fondo */
+body::before {
+  content: "";
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60%;
+  height: 60%;
+  background-image: url('./img/logo-ensenada.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: translate(-50%, -50%);
+  filter: blur(8px) brightness(0.8);
+  z-index: -1;
 }
 
-body{ color: #737373; font-size: 12px; font-family: verdana; }
+/* Enlace */
+a, a:link, a:visited, a:active {
+  color: #073763;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 13px;
+}
+a:hover {
+  text-decoration: underline;
+}
+</style>
+</head>
 
-a, a:link, a:visited, a:active { color: #AAAAAA; text-decoration: none; font-size: 12px; }
-a:hover { border-bottom: 1px dotted #c1c1c1; color: #AAAAAA; }
-img {border: none;}
-td { font-size: 12px; color: #7A7A7A; }
-
-
--->
 </style>
 <script language="JavaScript">
 <!--
